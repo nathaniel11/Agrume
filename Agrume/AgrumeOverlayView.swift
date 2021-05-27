@@ -47,9 +47,9 @@ final class AgrumeCloseButtonOverlayView: AgrumeOverlayView {
     if let closeButton = closeButton {
       closeButton.target = self
       closeButton.action = #selector(close)
-      navigationItem.leftBarButtonItem = closeButton
+      navigationItem.rightBarButtonItem = closeButton
     } else {
-      navigationItem.leftBarButtonItem = defaultCloseButton
+      navigationItem.rightBarButtonItem = defaultCloseButton
     }
     
     NSLayoutConstraint.activate([
